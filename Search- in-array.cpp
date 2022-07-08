@@ -16,7 +16,7 @@ int binarySearch(int arr[], int size, int key)
     while (s <= e)
     {
         //** agar s e ke baad me (e ke aage) aa jata h to hume pta lag jayega ki element nhi h array me and return -1
-        int mid = (s + e) / 2;
+        int mid = s + (e - s)/2;
 
         if (arr[mid] == key)
             return mid;
