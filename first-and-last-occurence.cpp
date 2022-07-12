@@ -4,7 +4,7 @@ int firstOcc(int arr[], int n, int key)
 {
     int s = 0;
     int e = n - 1;
-    int ans = -1;//! if not in array return -1
+    int ans = -1;//! if not in array return -1(acc to code studio question)
     while (s <= e)
     {
         int mid = s + (e - s) / 2;
@@ -50,7 +50,7 @@ int lastOcc(int arr[], int n, int key)
 }
 int main()
 {
-    int arr[12] = {1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7, 7};
+    int arr[12] = {1, 2, 3, 4, 5, 6, 7, 7, 7, 7, 7, 7}; 
     cout << firstOcc(arr, 12, 7) << " " << lastOcc(arr, 12, 7);
     return 0;
 }
