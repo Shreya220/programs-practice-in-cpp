@@ -12,7 +12,7 @@ int linearSearch(int arr[], int size, int key)
 int binarySearch(int arr[], int size, int key)
 {
     int s = 0;    // starting element ka index
-    int e = size; // ending element ka index
+    int e = size - 1; // ending element ka index
     while (s <= e)
     {
         //** agar s e ke baad me (e ke aage) aa jata h to hume pta lag jayega ki element nhi h array me and return -1
